@@ -1,0 +1,44 @@
+.color-deeppink {
+    color: deeppink;
+}  
+
+.rubik-jav {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <700>;
+    font-style: normal;
+  }
+
+.mon-paragraphe {
+    border: 5px solid rgb(253, 71, 101);
+    margin: 20px;
+    padding: 15px;
+    background-color: darkgrey;
+}
+
+.presentation-contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.presentation-contenu img {
+    max-width: 100%;
+    height: auto;
+    margin: 20;
+}
+
+.bloc-1 img {
+    width: 150%;
+    height: 175px;
+}
+
+.bloc-2 img {
+    width: 150%;
+    height: 175px;
+}
+
+.bloc-3 img {
+    width: 150%;
+    height: 175px;
+}

@@ -1,0 +1,123 @@
+body, html {
+    margin: 0!; /* supprime la marge par défaut*/
+    height: 100%; /* assure que le corp prend toute la hauteur*/
+    overflow-x: hidden; /* cache la barre de défilement de gauche à droite*/
+    background-image: url(../image/Ahriback.jpg);
+    background-size: cover;
+}
+
+.txt {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: xx-large;
+    font-style: normal;
+    color: black;
+}
+.txt1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: xx-large;
+    font-style: normal;
+    color: rgb(148, 10, 10);
+}
+
+#logoriot2 {
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.presentationcarte {
+    display: flex;
+    align-items: center;
+    background-color: rgb(192, 138, 138);
+    border: 5px solid rgba(70, 7, 7, 0.932);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 170px;
+
+}
+
+.image2aa {
+    border: 5px solid rgba(70, 7, 7, 0.932);
+    max-width: 100%;
+    height: auto;
+    margin-right: 40px;
+
+}
+
+.banderolemalph {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#banderole {
+    animation: 10s linear 0s infinite running movebanner; /* applique une animation ; temps, evolution dans le temps, délai avant premier lancement, durée de l'animation, désignation(pour def point de début et point de fin) */ 
+}
+
+@keyframes movebanner {
+    from { margin-left: -50%; }
+    to   { margin-left: 100%; }
+} /* keyframe: indique le point de départ et le point d'arrivée de l'animation*/
+
+
+
+footer {
+    background-color: black;
+}  
+
+.footerlogo {
+    background-color: black;
+}
+
+#logo1 {
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.footertxt {
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: darkgrey;
+}
+
+.footersocial {
+    display: flex;
+    flex-wrap: wrap; /* permet à la page de s'adapter en fonction de la taille de l'élément (retour à la ligne si trop gross image par exemple)*/
+    gap: 20px; /* espace entre les éléments*/
+    justify-content: center; /* centrer image*/
+    margin-top: 40px;
+    background-color: black;
+    padding: 25px;
+}
+
+#logo2 {
+    width: 50px;
+}
+
+#logo3 {
+    width: 50px;
+}
+
+#logo4 {
+    width: 50px;
+}
+
+.footercontact {
+    display: flex;
+    flex-wrap: wrap; /* permet à la page de s'adapter en fonction de la taille de l'élément (retour à la ligne si trop gross image par exemple)*/
+    gap: 20px; /* espace entre les éléments*/
+    justify-content: space-around; /* centrer image*/
+    color: darkgrey;
+    padding: 120px;
+}

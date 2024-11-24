@@ -1,0 +1,217 @@
+body, html {
+    margin: 0!; /* supprime la marge par défaut*/
+    height: 100%; /* assure que le corp prend toute la hauteur*/
+    overflow-x: hidden; /* cache la barre de défilement de gauche à droite*/
+    background-image: url(../image/zed1.png);
+    background-size: cover;
+}
+
+header {
+    display: flex; /*utilise flexbox pour centrer content*/
+    align-items: center;
+    width: 98%;
+    margin-top: 70px;
+}
+
+h1 {
+    margin: 35px auto; /*ajout d'une marge*/
+    width: fit-content; /* adapte largeur au contenu*/
+    text-align: center; /* centre txt à l'intérieur*/
+    font-size: 58px;
+    color: rgb(255, 255, 255);
+}
+
+
+.fira-sans-condensed-bold {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#image1 { /* # pour ID, element unique */
+    width: 100%; /* permet de modifier la taille de l'image*/
+    border: 5px solid black; /*bordure*/
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* permet à la page de s'adapter en fonction de la taille de l'élément (retour à la ligne si trop gross image par exemple)*/
+    gap: 20px; /* espace entre les éléments*/
+    justify-content: space-around; /* centrer image*/
+    margin-top: 90px;
+}
+
+.containergif {
+    display: flex;
+    flex-wrap: wrap; /* permet à la page de s'adapter en fonction de la taille de l'élément (retour à la ligne si trop gross image par exemple)*/
+    gap: 20px; /* espace entre les éléments*/
+    justify-content: space-around; /* centrer image*/
+}
+
+
+.item {
+    display: flex; /* alignement image et texte*/
+    flex-direction: column; /*align text au dessus image*/
+    align-items: center; /*aligne vertical centre*/
+    gap: 10px; /* espace entre image et texte*/
+    margin-top: 20px; /* marge au dessus de l'élément*/
+}
+
+.police-et-txt {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;   
+    font-size: 40px; 
+    color: rgb(253, 255, 255);
+    margin-bottom: 20px;
+}
+
+.image2 {
+    width: 275px;
+    display: block;
+}
+
+.image2a {
+    width: 275px;
+    display: none; /*masque le gif par defaut*/
+}
+
+.containergif:hover .image2 {
+    display: none; /*masquer image statique survol*/
+}
+
+.containergif:hover .image2a {
+    display: block; /*Affiche gif survol*/
+}
+
+#image3 {
+    width: 275px;
+}
+
+#image4 {
+    width: 275px;
+}
+
+#image5 {
+    width: 275px;
+}
+
+.banderolemalph {
+    width: 100%;
+    margin-top: 80px;
+}
+
+#banderole {
+    animation: 10s linear 0s infinite running movebanner; /* applique une animation ; temps, evolution dans le temps, délai avant premier lancement, durée de l'animation, désignation(pour def point de début et point de fin) */ 
+}
+
+@keyframes movebanner {
+    from { margin-left: -50%; }
+    to   { margin-left: 100%; }
+  } /* keyframe: indique le point de départ et le point d'arrivée de l'animation*/
+
+footer {
+    background-color: black;
+}  
+
+.footerlogo {
+    background-color: black;
+}
+
+#logo1 {
+    width: 150px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.footertxt {
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: darkgrey;
+}
+
+.footersocial {
+    display: flex;
+    flex-wrap: wrap; /* permet à la page de s'adapter en fonction de la taille de l'élément (retour à la ligne si trop gross image par exemple)*/
+    gap: 20px; /* espace entre les éléments*/
+    justify-content: center; /* centrer image*/
+    margin-top: 40px;
+    background-color: black;
+    padding: 25px;
+}
+
+#logo2 {
+    width: 50px;
+}
+
+#logo3 {
+    width: 50px;
+}
+
+#logo4 {
+    width: 50px;
+}
+
+.footercontact {
+    display: flex;
+    flex-wrap: wrap; /* permet à la page de s'adapter en fonction de la taille de l'élément (retour à la ligne si trop gross image par exemple)*/
+    gap: 20px; /* espace entre les éléments*/
+    justify-content: space-around; /* centrer image*/
+    color: darkgrey;
+    padding: 120px;
+}
+
+.lightmode{
+    background-color: whitesmoke;
+    background-image: url(../image/lightbackground.jpg);
+    
+    
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+
+}
+
+#theme-switch svg{
+    fill: var(--primary-color);
+}
+#theme-switch svg:first-child{
+    display: none;
+}
+.lightmode #theme-switch svg:last-child{
+    display: none;
+}
+.lightmode #theme-switch svg:first-child{
+    display: block;
+}
+
+#formulaire{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 90px;
+}
+
+#formulaire svg{
+    fill: var(--primary-color);
+}

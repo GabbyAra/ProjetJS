@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet HTML/CSS</title>
+    <link rel="stylesheet" href="sprojet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <header>
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-800v-120h80v120h-80Zm0 760v-120h80v120h-80Zm360-400v-80h120v80H800Zm-760 0v-80h120v80H40Zm708-252-56-56 70-72 58 58-72 70ZM198-140l-58-58 72-70 56 56-70 72Zm564 0-70-72 56-56 72 70-58 58ZM212-692l-72-70 58-58 70 72-56 56Zm268 452q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        </button>
+        <button id="formulaire">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
+        </button>
+        <img src="../image/lolbanner2.png" alt="Image_en_tête" id="image1"> 
+    </header>
+
+    <h1 class="fira-sans-condensed-bold">Bienvenue sur LEAGUE OF LEGENDS
+    </h1>
+
+    <section>
+        <div class="containergif">
+            <div class="item">
+                <span class="police-et-txt">Nouveautés</span>
+                <img src="../image/ahri.png" alt="image_news" class="image2">
+                <a href="2projet.html"><img src="../image/ahrigif.gif" alt="image_news_a" class="image2a">
+                </a>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="item">
+                <span class="police-et-txt">Séries</span>
+                <img src="../image/series.JPG" alt="image_series" id="image3">
+            </div>
+            <div class="item">
+                <span class="police-et-txt">Starter</span>
+                <img src="../image/starter.png" alt="image_starter" id="image4">
+            </div>
+            <div class="item">
+                <span class="police-et-txt">Personnages</span>
+                <img src="../image/cartes.JPG" alt="image_cartes" id="image5">
+            </div>
+        </div>
+    </section>
+
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+          <label for="name">Pseudo: </label>
+          <input type="text" name="Pseudo" id="Pseudo" required />
+        </div>
+        <div class="form-example">
+          <label for="password">Mot de Passe: </label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div class="form-example">
+          <input type="submit" value="Subscribe!" />
+        </div>
+    </form>
+
+    <div class="banderolemalph">
+        <img src="../image/malphite.gif" alt="image_banderole" id="banderole">
+    </div>
+
+    <footer>
+        <div class="footersocial">
+            <img src="../image/logotwt.png" alt="logo_twt" id="logo2">
+            <img src="../image/discordlogo.png" alt="logo_disc" id="logo3">
+            <img src="../image/instalogo.png" alt="logo_insta" id="logo4">
+        </div>
+
+        <div class="footerlogo">
+            <img src="../image/logofooter.png" alt="logo_lol" id="logo1">
+        </div>
+        
+        <div class="footercontact">
+            <span>NOTICE DE CONFIDENTIALITÉ</span>
+            <span>SUPPORT</span>
+            <span>SITE ÉCHANGE PRO</span>
+            <span>CONTACT</span>
+            <span>COMMUNAUTÉ</span>
+        </div>
+
+        <div class="footertxt">
+            <small>Copyright © 2023 Littérature.com. Tous droits réservés. Riot Games, League of Legends et PvP.net sont des marques déposé de Riot Games, Inc.</small>
+        </div>
+
+
+    </footer>
+    <script src="projetjs.js"></script>
+</body>    
+
+</html>
